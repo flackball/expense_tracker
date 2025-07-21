@@ -52,3 +52,4 @@ def authenticate_user(db, username: str, password: str):
     if user and verify_password(password, user.hashed_password):
         return user
     return None
+
